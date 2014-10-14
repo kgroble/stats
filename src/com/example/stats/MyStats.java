@@ -6,4 +6,5 @@ import android.app.Application;
 
 public class MyStats extends Application{
 	static ArrayList<Double> vals;
+	static boolean labels;
 }

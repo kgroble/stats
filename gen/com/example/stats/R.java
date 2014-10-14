@@ -24,15 +24,23 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
-        public static final int confirmEntryButton=0x7f080002;
-        public static final int newPointText=0x7f080001;
-        public static final int seeStatsButton=0x7f080003;
-        public static final int statsDisplay=0x7f080004;
+        public static final int RelativeLayout1=0x7f080009;
+        public static final int action_settings=0x7f08000c;
+        public static final int clearButton=0x7f080003;
+        public static final int confirmEntryButton=0x7f080001;
+        public static final int deleteButton=0x7f08000b;
+        public static final int editButton=0x7f080007;
+        public static final int labelsCB=0x7f080008;
+        public static final int newPointText=0x7f080002;
+        public static final int plotButton=0x7f080004;
+        public static final int pointView=0x7f08000a;
+        public static final int seeStatsButton=0x7f080005;
+        public static final int statsDisplay=0x7f080006;
         public static final int textView1=0x7f080000;
     }
     public static final class layout {
         public static final int add_layout=0x7f030000;
+        public static final int view_layout=0x7f030001;
     }
     public static final class menu {
         public static final int add_entries=0x7f070000;

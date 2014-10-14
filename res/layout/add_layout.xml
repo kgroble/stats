@@ -17,38 +17,43 @@
         android:text="Add Data Points"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <Button
+        android:id="@+id/confirmEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newPointText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="addPoint"
+        android:text="Confirm Entry" />
+
     <EditText
         android:id="@+id/newPointText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
         android:ems="10"
-        android:inputType="numberDecimal|numberSigned" >
-
-        <requestFocus />
-    </EditText>
+        android:inputType="numberDecimal|numberSigned" />
 
     <Button
-        android:id="@+id/confirmEntryButton"
-        android:onClick="addPoint"
+        android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/newPointText"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Confirm Entry" />
+        android:layout_marginBottom="32dp"
+        android:onClick="clearData"
+        android:text="Reset" />
 
     <Button
-        android:id="@+id/seeStatsButton"
-        android:onClick="getStats"
+        android:id="@+id/plotButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/confirmEntryButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:text="See Stats" />
+        android:layout_toRightOf="@+id/seeStatsButton"
+        android:onClick="plotData"
+        android:text="Plot" />
 
     <TextView
         android:id="@+id/statsDisplay"
@@ -56,7 +61,33 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/seeStatsButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="94dp"
-        android:text="" />
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:onClick="editData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clearButton"
+        android:layout_centerHorizontal="true"
+        android:text="View/Delete Points" />
+
+    <Button
+        android:id="@+id/seeStatsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmEntryButton"
+        android:layout_toLeftOf="@+id/clearButton"
+        android:onClick="getStats"
+        android:text="See Stats" />
+
+    <CheckBox
+        android:id="@+id/labelsCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plotButton"
+        android:layout_alignBottom="@+id/plotButton"
+        android:layout_toRightOf="@+id/clearButton"
+        android:text="Labels" />
 
 </RelativeLayout>
